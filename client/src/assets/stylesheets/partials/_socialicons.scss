@@ -1,0 +1,39 @@
+@import "../scheme";
+
+//===================
+// SOCIAL ICONS
+//===================
+.social_links {
+  text-align: center;
+  color: $dark-blue-grey;
+
+  ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  li {
+    font-size: 2.25em;
+    float:left;
+  }
+
+  li a {
+    display: block;
+    color: $dark-blue-grey;
+    text-align: center;
+    padding-right: 15px;
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+  }
+
+  a:hover {
+    font-size: 1.25em;
+    color: $teal;
+  }
+}

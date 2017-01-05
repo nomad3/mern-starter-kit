@@ -1,0 +1,83 @@
+@import "scheme";
+
+@-ms-viewport{
+  width: device-width;
+}
+
+//================
+// LAPTOP SCREENS
+//================
+@media screen and (max-width: 1366px) {
+  .page_body {
+    margin: $content-body-laptop-width;
+  }
+
+  #navigation_bar {
+    padding: $content-body-laptop-width;
+  }
+
+  .footer_container {
+    padding: $content-body-laptop-width;
+    padding-top: 1em;
+  }
+}
+
+
+//================
+// TABLET SCREENS
+//================
+@media screen and (max-width: 1024px) {
+  .page_body {
+    margin: $content-body-tablet-width;
+  }
+
+  #navigation_bar {
+    padding: $content-body-tablet-width;
+  }
+
+  .footer_container {
+    padding: $content-body-tablet-width;
+    padding-top: 1em;
+  }
+}
+
+
+//================
+// PHONE SCREENS
+//================
+@media screen and (max-width: 800px) {
+  .page_body {
+    margin: $content-body-mobile-width;
+    padding: 0em 1em;
+  }
+
+  .header_container {
+    padding: 20em 0em;
+  }
+
+  .nav_title a {
+    font-size: 1.75em;
+  }
+
+  #navigation_bar {
+    padding: 0em 3em;
+  }
+
+  .footer_container {
+    padding: $content-body-mobile-width;
+    padding-top: 1em;
+  }
+
+  .david_profile, .home_logo {
+    display: block;
+    margin: 0px auto;
+    width: 250px;
+    float: none !important;
+  }
+
+  .about_contents {
+    width: 100% !important;
+    padding-right: 0px !important;
+    margin-bottom: 45px !important;
+  }
+}

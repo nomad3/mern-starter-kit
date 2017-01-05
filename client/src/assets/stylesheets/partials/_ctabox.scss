@@ -1,0 +1,20 @@
+@import "../scheme";
+
+//===================
+// CALL TO ACTION
+//===================
+.cta_box {
+  border: 2px dotted $off-white;
+  padding: 1em;
+  margin: 1em 0em !important;
+
+  p {
+    font-size: 1.15em;
+    padding: 1em 0em;
+  }
+}
+
+.cta_image {
+  width: 100%;
+  padding: 1em;
+}

@@ -1,0 +1,73 @@
+@import "../scheme";
+
+//=========================
+// REGISTER FORM
+//=========================
+
+@import "../scheme";
+
+//===================
+// CONTACT FORM
+//===================
+
+.input_group {
+  position: relative;
+  margin-bottom: 45px;
+  font-size: 1.15em;
+
+  label {
+    position: relative;
+    bottom: -23px;
+    left: 10px;
+    transition: all 0.5s ease;
+    opacity: 0.3;
+  }
+
+  .input_container {
+
+    &::after {
+      transition: all 0.5s ease;
+      display: block;
+      content: '';
+      border-bottom: 3px solid $off-white;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+}
+
+.active {
+
+  label {
+    bottom: 0px;
+    left: 0px;
+    opacity: 1;
+    color: $blue-purple;
+    font-size: 0.8em;
+  }
+
+  .input_container {
+
+    &::after {
+      animation: lineSlide 0.15s linear;
+      border-bottom: 3px solid $blue-purple;
+    }
+  }
+}
+
+.error {
+  font-size: 0.8em;
+  color: $red;
+  font-weight: 600;
+}
+
+.submit_button {
+  margin: 2em 0em;
+  width: 100%;
+}
+
+@keyframes lineSlide {
+  0%  {width: 100%; border-color: $off-white;}
+  25% {width: 0%;}
+  100% {width: 100%; border-color: $red;}
+}

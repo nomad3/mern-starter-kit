@@ -1,0 +1,23 @@
+@import "../scheme";
+
+//===================
+// BUTTON
+//===================
+.button {
+  background-color: $white;
+  border: 2px solid $light-grey;
+  border-radius: 40px;
+  color: $green;
+  cursor: pointer;
+  margin-right: 1em;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+  white-space: nowrap;
+
+  &:hover {
+    background-color: $red;
+    color: $white;
+  }
+}

@@ -1,0 +1,28 @@
+@import "../scheme";
+
+//===================
+// CTA PIC
+//===================
+
+.cta-pic {
+  width: 100%;
+  padding: 0em 1em;
+
+  svg {
+    display: block !important;
+    margin: 15px auto;
+    font-size: 8em;
+    color: $blue-purple;
+    transition: all 0.5s ease;
+  }
+
+  svg:hover {
+    color: $purple;
+    cursor: pointer;
+    font-size: 10em;
+  }
+
+  h5, p {
+    text-align: center;
+  }
+}
